@@ -19,11 +19,11 @@ git clone https://github.com/vektra/homesteading-note.git note
 
 cd note
 
-eval $(vektra -o env)
-
 GITHUB_USER=$1
 
-vektra setup -g $GITHUB_USER
+vektra -o setup -g $GITHUB_USER
+
+eval $(vektra -o env)
 
 vektra addons:enable postgres
 vektra --app note addons:bind postgres
