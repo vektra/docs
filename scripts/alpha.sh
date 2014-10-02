@@ -11,13 +11,25 @@ fi
 
 set -e -x
 
-echo "Booting vektra outpost instance..."
-vektra boot
+echo "Checking that your system is ready for vektra..."
+
+if ! vektra outpost:check; then
+  echo "You need to install Virtualbox first!"
+  exit 1
+fi
 
 echo "Cloning test repo..."
-git clone https://github.com/vektra/homesteading-note.git note
+
+if test -e note; then
+  echo "Detecting existing note directory, using it."
+else
+  git clone https://github.com/vektra/homesteading-note.git note
+fi
 
 cd note
+
+echo "Booting vektra outpost instance..."
+vektra boot
 
 GITHUB_USER=$1
 
