@@ -1,8 +1,10 @@
-# Changes in Alpha2
+# Chagelog
+
+## Alpha 2
 
 Release Date: **Oct 29th, 2014**
 
-## New Features
+### New Features
 
 * Ability to boot an instance on EC2: `vektra boot:aws`
 * Ability to boot an instance on DigitalOcean: `vektra boot:digitalocean`
@@ -15,8 +17,7 @@ Release Date: **Oct 29th, 2014**
 See [ADDONS.md](https://github.com/vektra/docs/blob/master/ADDONS.md) for info about using the new addons!
 
 
-## Notable Bugfixes
+### Notable Bugfixes
 
 * `vektra logs` won't go empty occasionally
 * Volts restart on machine start
-
