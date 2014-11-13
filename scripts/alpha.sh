@@ -5,7 +5,7 @@ fi
 
 if ! which vektra > /dev/null; then
   echo "Please download the vektra tool first"
-  echo "HINT: curl -L http://get.vektra.io | sh"
+  echo "HINT: curl -L https://get.vektra.com | sh"
   exit 1
 fi
 
