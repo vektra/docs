@@ -8,14 +8,14 @@ if ! which vektra; then
   if [[ "$DOWNLOAD" != "y" ]]; then
 
     echo -e "\nPlease download the Vektra CLI manually and rerun this script."
-    echo -e "HINT: curl -L http://get.vektra.io | sh"
+    echo -e "HINT: curl -L https://get.vektra.com | sh"
     exit 1
 
   else
 
     echo -e "\nDownload Vektra CLI to current directory..."
-    read -p "$ curl -L http://get.vektra.io | sh" -n 1
-    curl -L http://get.vektra.io | sh
+    read -p "$ curl -L https://get.vektra.com | sh" -n 1
+    curl -L https://get.vektra.com | sh
 
     echo -e "\nMove Vektra CLI to somewhere in your PATH, like ~/bin..."
     read -p "$ mv ./vektra " CLIPATH
