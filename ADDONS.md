@@ -66,7 +66,7 @@ It exports 2 config variables:
 
 ## Papertrail
 
-This sends logs from all apps to Logentries. It does not need to be bound to individual apps.
+This sends logs from all apps to Papertrail. It does not need to be bound to individual apps.
 
 `vektra addons:enable papertrail --url logs2.papertrailapp.com:37197 --ssl true`
 
