@@ -21,7 +21,7 @@ your apps.
 
 ### name
 
-(string, optional) A clean and simple name to identify the template (30
+(string, optional) A clean and simple name to identify the app (30
 characters max).
 
 ```js
@@ -73,7 +73,7 @@ subdomain. So in the example below our app will be available at
 #### path and subdomain routes
 
 If `path` and `subdomain` are both supplied for a route they will be used in
-conjunction. So in the eample below our app will be available at
+conjunction. So in the example below our app will be available at
 `example.ourdomain.com/example`.
 
 ```js
